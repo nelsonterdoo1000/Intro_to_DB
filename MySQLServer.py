@@ -47,7 +47,7 @@ def create_database():
             
             print("Database 'alx_book_store' created successfully!")
             
-    except Error as e:
+    except mysql.connector.Error as e:
         print(f"Error: Failed to connect to MySQL server or create database")
         print(f"MySQL Error: {e}")
         
